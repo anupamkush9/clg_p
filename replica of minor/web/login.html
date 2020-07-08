@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="Login" method="POST">
+           <hr>
+            <input type="text" placeholder="Enter username" name="unm">
+            <br><br> 
+            <input type="password" placeholder="Enter password" name="pass">
+            <br><br>
+            <input type="submit" value="Login">
+        <hr>
+        </form>
+         <a>create account?</a>&nbsp;&nbsp;
+<a href="signup.html">newuser ? click here---</a>
+    </body>
+</html>
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<meta name="keywords" content="Attendance Login ">
+<link rel="stylesheet" href="css/login.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+            <h1>HAVE A GLANCE OF CAMPUS</h1>
+            <h2>Account Login</h2>
+            <div class="w3layoutscontaineragileits">
+		<form method="post" onsubmit="return myfun()" action="Login" >
+		<table>
+                    <tr><td><input type="text" id="unm" name="unm" placeholder="USER NAME"  >
+                              <span id="msg1" style="color: red;"></span></td></tr>
+                    <tr><td><input type="password" id="pass" name="pass" placeholder="PASSWORD" >
+                             <span id="msg2" style="color: red;"></span></td></tr>
+                <tr><td>Forgot ?<a href="#" >Username/Password</a>&nbsp;|&nbsp;<a href="signup.html">Signup for new user</a></td></tr> 
+                <tr><td></td></tr>   <tr><td></td></tr>   <tr><td></td></tr>   <tr><td></td></tr>
+			<tr><td>
+			<div class="aitssendbuttonw3ls">
+                            <input type="submit" value="LOGIN" name="submit">
+				<div class="clear"></div>
+			</div>
+			</td></tr>
+		</table>
+		</form>
+	</div>
+        <script>
+            function myfun()
+            {      var a=document.getElementById("unm").value;
+                   var b=document.getElementById("pass").value;
+                    if((a=="")&&(b==""))
+                    {
+                        document.getElementById("msg1").innerHTML="*****please fill all fields******";
+			document.getElementById("msg2").innerHTML="*****please fill all fields******";
+			return false;
+		    }
+		if(a=="")
+		{       document.getElementById("msg1").innerHTML="*****please fill all fields******";
+			return false;
+		}
+                if(b=="")
+		{       document.getElementById("msg2").innerHTML="*****please fill all fields******";
+			return false;
+		}
+            } 
+        </script>
+	       	
+ 
+</body>
+</html>

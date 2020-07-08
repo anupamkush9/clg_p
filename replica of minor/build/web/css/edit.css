@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2019, 8:56:02 PM
+    Author     : asus
+*/
+ body
+            {
+                margin: 0;
+            }
+            h1
+            {
+                color: white;
+                text-align: center;
+            }
+            input,textArea
+            {
+                width:100%;
+                font-size: 30px;
+                
+            }
+            label
+            {
+                width: 450px;
+                display: block;
+                font-size: 30px;
+            }
+            header,footer,aside
+            {
+                display: block;
+            }
+            .container
+            {
+                width: 1400px;
+                margin: 0 auto;
+            }
+        .headerbar
+        {
+            width: 1400px;
+            float: left;    
+        }
+        .headerbar.top
+        {
+            background: green;
+            min-height: 100PX;
+        }
+        .headerbar.bottom
+        {
+            background: #003333;
+            min-height: 60PX;
+        }
+        .leftbar
+        {
+         width: 1400px;
+         background:yellowgreen;
+         min-height: 800px;
+         float: left;
+        }
+        .rightbar
+        {
+         width: 900px;
+         background: #ccccff;
+         min-height: 800px;
+         float: left;
+         text-align: center;
+        } 
+        table
+        {
+            width: 900px;
+        }
+       th,td
+       {
+           border: 2px solid black;
+           border-collapse: collapse;
+       }
+       th
+       {
+           background: #ff9999;
+       }
+        .c1
+       {
+           font-size: 14px;
+           padding: 5px;
+           border-radius: 2px;
+           background: #ff0033;
+           color: #ffffff;
+           float: right;
+           width: 100px;
+       }
+     .id
+     {
+         background-color: gray;
+     }

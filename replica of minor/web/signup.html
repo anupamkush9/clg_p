@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ <html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="Signup">
+            <input type="text" name="unm" placeholder="Enter username">
+        <!---    <br>
+            <br>  >
+          <input type="text" name="name" placeholder="Enter name">  --->
+     <!--       <br>
+            <br>  
+            <input type="password" name="pass" placeholder="Enter password">
+            <br>
+            <br>
+            <input type="password" name="cpass" placeholder="Enter password Again">
+            <br>
+            <br>
+         <input type="email" name="email" placeholder="Enter Email">
+            <br>
+            <br>
+            Male
+            <input type="radio" name="gender" value="male">
+            &nbsp;&nbsp;&nbsp;
+            Female
+            <input type="radio" name="gender" value="female">
+            <br>
+            <br>
+            <select name="city">
+                <option>Indore</option>
+                <option>Mhow</option>
+                <option>Ujjain</option>
+                <option>Dhar</option>
+                <option>Sagore</option>     
+            </select>           
+            <input type="submit" value="Submit">
+            &nbsp;&nbsp;
+            <input type="reset" value="Clear">
+        </form>
+    </body>
+</html>
+-->
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Signup</title>
+</head>
+<body>
+	<h2>HAVE A GLANCE OF CAMPUS</h2>
+ 
+<div class="container">
+     
+    <div class="content_main">
+        <form Style="width:800px;height:aoto;margin-left:0px;padding-left:200px;padding-top:100px;" method="post" onsubmit="return myfun()" action="Signup">
+							<fieldset>
+                                <legend><h1>Signup</h1></legend>
+								<table>
+								
+									<tr>
+										<td>User Name</td><td>: </td>
+                                                                                <td><input type="text" id="nm" name="unm" placeholder="Enter User Name" required>
+                                                                                 <span id="msg" style="color: red;"></span></td><td>&nbsp;</td></td>
+									        
+										
+                                                                        </tr>
+									
+									<tr>
+										<td>Password</td>
+										<td>: </td>
+										<td><input type="password" id="password1" name="pass" value="" placeholder="Enter Password" required>
+                                                                                        <span id="msg1" style="color: red;"></span></td><td>&nbsp;</td>
+										
+									</tr>
+									
+									<tr>
+									<td>Confirm Password</td>	<td>: 	</td>
+                                                                        <td><input type="password" id="password2" name="cpass" value="" placeholder="Enter Confirm Password" required>
+                                                                         <span id="msg2" style="color: red;"></span></td>
+									</tr>
+									
+									<tr>
+										<td>Email Address </td>	<td>:</td>
+										<td><input type="email" name="email" value="" placeholder="Enter Email Address" required></td><td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>Mobile Number  </td>	<td>:</td>
+										<td><input type="text" name="mob_no" value="" placeholder="Enter Mobile Number" required></td><td>&nbsp;</td>
+									</tr>
+									
+									<tr>
+										<td>Gender</td><td>:</td>
+										<td><input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female</td>
+									</tr>
+									
+									<tr>
+										<td>City</td><td>:</td>
+										<td>
+										<select name="city">
+										  <option>Indore</option>
+								          <option>Bhopal</option>
+								          <option>Ujjain</option>
+								          <option>Dewas</option>
+								          <option>Jabalpur</option>
+										  </select>
+										 </td>
+									</tr>
+                                   
+									<tr>
+										 
+										<td><input type="reset" value="Reset" class="button1"></td><td></td>
+										<td><input type="submit" name="add_student" value="Signup" class="button1"></td>
+									</tr>
+								</table>
+							</fieldset>
+						</form>
+    </div>
+</div>
+ 
+ <script type="text/javascript">
+		function myfun()
+		 {
+			var a=document.getElementById("password1").value;
+			var b=document.getElementById("password2").value;
+                        
+			var c=document.getElementById("nm").value;
+                if(c=="")
+		{
+			document.getElementById("msg").innerHTML="*****please fill username******";
+			return false;
+		}
+                
+                if(c.length<6)
+		{
+			document.getElementById("msg").innerHTML="***** length of username must be greater than 5 character******";
+			return false;
+		}
+		if(c.search(/[a-z]/)==-1)
+		{
+			document.getElementById("msg").innerHTML="***** small character must be there in there in username******";
+			return false;
+		}
+                if(c.search(/[A-Z]/)==-1)
+		{
+			document.getElementById("msg").innerHTML="***** capital character must be there in there in username******";
+			return false;
+		}
+                if(c.search(/[0-9]/)==-1)
+		{
+			document.getElementById("msg").innerHTML="***** Digits character must be there in there in username******";
+			return false;
+		}
+		if(a=="")
+		{
+			document.getElementById("msg1").innerHTML="*****please fill password******";
+			return false;
+		}
+       if(a.length<6)
+		{
+			document.getElementById("msg1").innerHTML="***** length of password must be greater than 5 digit******";
+			return false;
+		}
+		if(a.length>20)
+		{
+			document.getElementById("msg1").innerHTML="***** length of password must not be greater than 21 digit******";
+			return false;
+		}
+		if(a!=b)
+		{
+			document.getElementById("msg2").innerHTML="***** both the passwords are not same******";
+			return false;
+		}
+	/*	if(-1==a.indexOf("@"))
+		{
+			document.getElementById("msg1").innerHTML="***** @ must be there in there in password******";
+			return false;
+		}*/
+	
+		 }
+	</script>
+
+
+</body>
+</html>

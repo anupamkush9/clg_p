@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 2, 2019, 1:33:39 AM
+    Author     : asus
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2019, 9:01:40 PM
+    Author     : asus
+*/
+            body
+            {
+                margin: 0;
+            }
+            h1
+            {
+                color: white;
+                text-align: center;
+            }
+            input,textArea
+            {
+                width:400px;
+                
+                
+            }
+            label
+            {
+                width: 450px;
+                display: block;
+            }
+            header,footer,aside
+            {
+                width: 100%;
+                 padding-left: 50px;
+                display: block;
+            }
+            .container
+            {
+                 padding-left: 50px;
+               
+               width: 100%;
+                margin: 0 auto;
+            }
+        .headerbar
+        {
+            
+            float: left;    
+        }
+        .headerbar.top
+        {
+            background: green;
+            min-height: 100PX;
+        }
+        .headerbar.bottom
+        {
+            background: #003333;
+            min-height: 60PX;
+        }
+        
+         .rightbar
+        {
+         width: 95%;
+         background: #ccccff;
+         min-height: 200px;
+         float: left;
+         text-align: center;
+         font-size: 30px;
+        }
+        table
+        {
+           
+            width: 100%;
+        }
+       th,td
+       {
+           border: 2px solid black;
+           border-collapse: collapse;
+      
+       }
+       th
+       {
+           background: #ff9999;
+           font-size: 25px;
+       }
+        .c1
+       {
+           font-size: 14px;
+           padding: 5px;
+           border-radius: 2px;
+           background: #ff0033;
+           color: #ffffff;
+           float: inside;
+           width: 100px;
+       }

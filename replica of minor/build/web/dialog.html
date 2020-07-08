@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<script>
+     function preventBack()
+     {
+         window.history.forward();
+     }
+     setTimeout("preventBack()",0);
+     window.onunload=function (){null};
+    
+   </script>  
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title></title>
+	<style type="text/css">
+		#11{
+			color: red;
+			text-align: center;
+			padding-left: 500px;
+		}
+	</style>
+</head>
+<body>
+ 
+
+	<a href="jquery.html" onclick="ret"></a>
+	<div class="alert alert-warning alert-dismissible fade show">
+    <strong>Warning!</strong>
+<a href="show_quiz_question.jsp" id="11" onclick="return confirm('*******Do you want to start attempt?********')
+">Do not close or minimize the window otherwise your test will authmatically will get submit</a>
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+   
+        <script type="text/javascript" src="js/timer.js"></script>  
+</body>
+
+<script>
+     function preventBack()
+     {
+         window.history.forward();
+     }
+     setTimeout("preventBack()",0);
+     window.onunload=function (){null};
+    
+   </script>     
+</html>
